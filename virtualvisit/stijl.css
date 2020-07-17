@@ -1,0 +1,556 @@
+@font-face {
+	font-family: fontLight;
+	src: url(fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+	font-family: fontRegular;
+	src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+	font-family: fontBold;
+	src: url(fonts/Poppins-Bold.ttf);
+}
+
+body {
+
+	overflow: hidden;
+}
+
+html {
+	transition: 0.5s;
+
+}
+
+.overlay2 {
+	position: absolute;
+	z-index: 1;
+	width: 96vw;
+	height: 83vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	;
+}
+
+.tut1,
+.tut2,
+#promt {
+	background-color: white;
+	line-height: 1.5;
+	position: absolute;
+	z-index: 9;
+	padding: 2%;
+	width: 30vw;
+	height: 60vh;
+	font-family: fontRegular;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#promt {
+	height: 50vh;
+	width: 30vw;
+	padding: 4%;
+}
+
+.tut4 {
+	line-height: 1.5;
+	position: absolute;
+	z-index: 9;
+	font-family: fontRegular;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.tut1 article {
+	width: 50%;
+	overflow: hidden;
+}
+
+.tut1 input {
+
+	background-color: white;
+	border: 0px;
+	color: black;
+	padding: 0px 7px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.tut1 div {
+	border-bottom: 0.5px solid #000;
+	margin: 45px 0 10px 0;
+}
+
+.align {
+	margin: 50px 0 40px 0;
+}
+
+
+::placeholder {
+	color: #000;
+	padding-left: 0%;
+}
+
+#fout {
+	color: red;
+	width: 50%;
+	font-size: 10px;
+}
+
+#Ja,
+#Nee {
+	border: none;
+	font-family: fontBold;
+	background-color: #fff;
+	padding: 0 20px;
+	margin: 20px 20px 0 0;
+	border-radius: 20px;
+}
+
+#Nee {
+	border: 2px solid #e30713;
+	color: #e30713;
+}
+
+#Ja {
+	border: 2px solid #1bbcb6;
+	color: #1bbcb6;
+}
+
+.overlay h1,
+.optioneel h1,
+#promt h1 {
+	font-family: fontBold;
+}
+
+.optioneel,
+.stop {
+	background-color: white;
+	line-height: 1.5;
+	position: absolute;
+	display: flex;
+	z-index: 9;
+	width: 60vw;
+	height: 60vh;
+	font-family: fontRegular;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.stop {
+	height: 29%;
+}
+
+.hippo-embed-frame {
+	height: 100%;
+}
+
+.stop article {
+	margin: 100px 50px;
+}
+
+.stop h1 {
+	font-family: fontBold;
+}
+
+
+#image {
+	background-image: url(beelden/refter.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50%;
+}
+
+#personalvideo {
+	display: flex;
+	
+	width: 50%;
+}
+
+.optioneel article {
+	padding: 5%;
+	width: 50%;
+	margin: 70px 0;
+}
+
+.kopieer {
+	display: block;
+}
+
+i,
+.stop span {
+	font-size: 20px !important;
+	margin: 10px 10px 10px 0;
+	color: black;
+}
+
+#promt h1 {
+	margin: 70px 0 0 0;
+}
+
+.optioneel h1 {
+	font-family: fontRegular;
+}
+
+.overlayImg {
+	overflow: hidden;
+	width: 70vh;
+	margin: 10px 0;
+	height: 25vh;
+}
+
+#video {
+	position: relative;
+	transform: translate(-50%, 0%);
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	outline: none;
+}
+
+#introVideo {
+	width: 100%;
+	outline: none;
+}
+
+#overgang {
+	position: absolute;
+	top: 0%;
+	z-index: 30;
+
+}
+
+/*NAV ERASMUS*/
+nav {
+	border-bottom: 1px solid rgba(131, 131, 131, 0.336);
+	margin: 20px;
+}
+
+.nav-bar {
+	width: 86%;
+	margin: auto;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-evenly;
+
+}
+
+.nav-bar img {
+	margin-top: 14.5px;
+	margin-bottom: 14.5px;
+	width: 200px;
+}
+
+.nav-bar ul {
+	border: 0.5px solid rgba(131, 131, 131, 0.336);
+	display: flex;
+	align-items: center;
+	width: max-content;
+}
+
+.nav-bar ul a {
+	padding: 14px 20px 14px 20px;
+	font-family: fontLight;
+	text-decoration: none;
+	color: black;
+
+}
+
+.nav-bar ul a:hover {
+	color: #1bbcb6;
+}
+
+.searchIcon {
+	background-color: #1bbcb6;
+	color: white !important;
+}
+
+.glyphicon {
+
+	font-size: 13px;
+}
+
+.searchIcon:hover {
+	color: black !important;
+}
+
+.taal {
+	color: white !important;
+	background-color: #303030;
+}
+
+.taal:hover {
+	background-color: #e30713;
+}
+
+.informatie {
+	border-right: 1px solid rgba(131, 131, 131, 0.336);
+}
+
+section {
+	position: relative;
+	height: 83vh;
+	margin: 0 2%;
+	overflow: hidden;
+}
+
+iframe {
+	height: 83vh;
+	z-index: 0;
+}
+
+/*VIRTUELE TOUR*/
+
+.sideArticle {
+	width: 300px;
+	border-radius: 10px;
+	height: 75vh;
+	background-color: white;
+	position: absolute;
+	top: 17%;
+	right: 3.5%;
+	padding: 2%;
+	font-family: fontRegular;
+
+}
+
+#left,
+#right {
+	display: none;
+}
+
+.sideArticle input {
+	margin: 20px 0;
+}
+
+.sideArticle button {
+	border: none;
+	padding: 10px;
+	color: white;
+	background-color: #e30713;
+}
+
+#go {
+	position: absolute;
+	bottom: 7%;
+	font-family: fontBold;
+	width: fit-content;
+	padding: 0 20px;
+	border: 2px solid #1bbcb6;
+	border-radius: 20px;
+	background-color: white;
+	color: #1bbcb6;
+}
+
+.horse,
+.horseAll {
+	position: absolute;
+	bottom: 0%;
+	right: 5%;
+	transform: scaleX(-1);
+	width: 150px;
+}
+
+.horseAll img {
+	width: 120px;
+	position: sticky;
+}
+
+.horseAll div {
+	transform: scaleX(-1);
+	color: white;
+	padding: 20px;
+	position: absolute;
+	left: 38%;
+	width: 300px;
+	font-family: fontBold;
+	background-color: #303030;
+}
+
+.horseAll p {
+	font-family: fontRegular;
+}
+
+#catch,
+.overlay h1 {
+	font-size: 20px;
+	font-family: fontBold;
+}
+
+.dot {
+	height: 50px;
+	width: 50px;
+	margin: 15px 0;
+	border: 3px solid white;
+	border-radius: 50%;
+	display: inline-block;
+	box-shadow: 0px 0px 10px #000;
+	background-size: cover;
+	position: relative;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+.dot:hover {
+	transform: scale(1.1);
+}
+
+#word1 {
+	position: absolute;
+	color: white;
+	text-shadow: 2px 2px #000;
+	top: 50%;
+	left: 150%;
+	font-family: fontRegular;
+	transform: translate(0%, -50%);
+}
+
+.dot1 {
+	background-image: url(beelden/start.jpg);
+}
+
+.dot2 {
+	background-image: url(beelden/medialab.jpg);
+}
+
+.dot3 {
+	background-image: url(beelden/computer.jpg);
+}
+
+.dot4 {
+	background-image: url(beelden/aula.jpg);
+}
+
+.dot5 {
+	background-image: url(beelden/design.jpg);
+}
+
+.dot6 {
+	background-image: url(beelden/logo.png);
+	border: 3px solid #e30713 !important;
+	box-shadow: 0px 0px 10px #fff;
+	background-size: 80%;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+}
+
+.dot7 {
+	background-image: url(beelden/erasmusLogo.png);
+}
+
+.dots {
+	display: grid;
+}
+
+
+
+#terug {
+	height: 50px;
+	width: 50px;
+	margin: 15px 0;
+	background-image: url(beelden/start.jpg);
+	border: 3px solid white;
+	border-radius: 50%;
+	display: inline-block;
+	box-shadow: 5px 5px 10px #000;
+	background-size: cover;
+	position: relative;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+#terug:hover {
+	transform: scale(1.1);
+}
+
+button:focus,
+input:focus {
+	outline: 0;
+}
+
+.active {
+	border: 3px solid #1bbcb6;
+	transform: scale(1.1);
+}
+
+.timeLine {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 5%;
+	transform: translate(-50%, -50%);
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1024px) {
+
+	.tut1,
+	.tut2 {
+		width: 50vw;
+		height: 40vh;
+	}
+
+	.horseAll {
+		display: none;
+	}
+
+	.nav-bar {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.nav-bar ul a {
+		padding: 7px 10px 7px 10px;
+	}
+
+	.dots {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.timeLine {
+		top: 90%;
+		left: 50%;
+		width: 100%;
+	}
+
+	#word1 {
+		display: none;
+		top: -70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.active #word1 {
+		display: block;
+	}
+
+	.tut4 {
+		width: 70%;
+	}
+
+	.optioneel {
+		width: 70vw;
+	}
+
+	#personalvideo {
+		width: 100%;
+	}
+
+	.stop {
+		display: block;
+	}
+
+	.stop article {
+		margin: 45px 50px;
+	}
+	.hippo-embed-frame {
+		height: 26vh;
+	}
+
+}

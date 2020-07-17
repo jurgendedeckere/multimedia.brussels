@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>EhB-studenten | Erasmushogeschool Brussel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stijl.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        window.hippoEmbedSeo = "29814a0b-b609-4565-80b9-eefbc91c7b18.json";
+    </script>
+    <script src="https://hippo-embed-scripts.s3.amazonaws.com/video-delivery-embed.js" async></script>
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <nav>
+        <div class="nav-bar">
+            <img src="beelden/erasmusLogo.png" alt="ErasmusLogo">
+
+            <ul>
+
+                <a href="#" class="informatie">
+                    <li>informatie voor.. <span class="glyphicon glyphicon-chevron-down"></span></li>
+                </a>
+
+                <a href="#">
+                    <li>Evenementen</li>
+                </a>
+
+                <a href="#">
+                    <li>EhBlog</li>
+                </a>
+
+                <a href="#">
+                    <li>Vacatures</li>
+                </a>
+
+                <a href="#">
+                    <li>Over Ons</li>
+                </a>
+
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <a href="#" class="searchIcon">
+                    <span class="glyphicon glyphicon-search"></span>
+                </a>
+                <a href="#" class="taal">
+                    <li>ENGLISH</li>
+                </a>
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+
+
+    <!-- tour -->
+    <section>
+
+        <!-- chatbot -->
+        <article class="horseAll">
+            <div>
+                <h1>HEEFT U VRAGEN?</h1>
+                <p>start een discussie met onze chatbot nu!</p>
+            </div>
+            <img src="beelden/horsema.png" alt="horsema">
+        </article>
+
+        <!--black overlay -->
+        <div class="overlay2"></div>
+
+        <!-- introTutorial -->
+        <div class="overlay">
+
+
+            <!-- each tut is a popUp tutorial at the beginning -->
+            <div class="tut1">
+
+                <h1>START DE TOUR</h1>
+                <p>en we gaan een wondermooie belevenis tegemoet</p>
+
+                <div>
+                    <span class="glyphicon glyphicon-user"></span>
+                    <input class="a" type="text" autocomplete="off" id="naam" placeholder="Naam*">
+                </div>
+
+                <div>
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <input class="b" type="email" autocomplete="off" id="email" placeholder="Email*">
+                </div>
+
+                <div>
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <input class="c" type="text" autocomplete="off" id="stad" placeholder="Stad*">
+                </div>
+
+
+                <button id="go">VOLGENDE</button>
+                <img class="horse" src="beelden/horsema.png" alt="horsema">
+
+                <p id="fout"></p>
+
+            </div>
+
+            <div class="tut2">
+                <article>
+                    <h1>EEN VIRTUEEL WEETJE</h1>
+                    <p>laat je meeslepen doorheen alle ruimtes van Ehb</p>
+                    <p id="catch2" class="align"></p>
+                    <p id="plaats2"></p>
+                    <button id="go">BEKIJK & START</button>
+                    <img class="horse" src="beelden/horsema.png" alt="horsema">
+                </article>
+            </div>
+
+            <div class="tut4">
+                <article>
+                    <video id="video" controls>
+                        <source src="beelden/Intro.mp4" type="video/mp4">
+                    </video>
+                </article>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- transition between scenes -->
+        <video id="overgang" muted controls>
+            <source src="beelden/final_medialab.mp4" type="video/mp4">
+        </video>
+
+        <!-- iframe for the scene. constantly being changed by the javascript -->
+        <iframe id="frame1" src="https://app.lapentor.com/sphere/start-1" frameborder="0" width="100%" height="400px"
+            scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true"
+            mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+
+        <!-- sceneManagerMenu -->
+        <div class="timeLine">
+            <button id="terug" href="#">
+                <p id="word1">Terug</p>
+            </button>
+            <div class="dots">
+                <span id="left" class="glyphicon glyphicon-chevron-left"></span>
+                <span class="dot dot1 active">
+                    <p id="word1">Start</p>
+                </span>
+                <span class="dot dot2">
+                    <p id="word1">Medialab</p>
+                </span>
+                <span class="dot dot3">
+                    <p id="word1">Computerlokaal</p>
+                </span>
+                <span class="dot dot4">
+                    <p id="word1">Aula</p>
+                </span>
+                <span class="dot dot5">
+                    <p id="word1">Designlokaal</p>
+                </span>
+                <span class="dot dot6">
+                    <p id="word1">Tour verlaten</p>
+                </span>
+                <span id="right" class="glyphicon glyphicon-chevron-right"></span>
+            </div>
+        </div>
+
+        <!-- secretariat and restaurant popUp -->
+        <div class="optioneel">
+            <div id="image"></div>
+            <article>
+                <h1 id="catch"></h1>
+                <h1 id="plaats"></h1>
+
+                <button id="Nee" href="#">Liever niet</button><button id="Ja" href="#">Lijkt me leuk!</button>
+                <img class="horse" src="beelden/horsema.png" alt="horsema">
+            </article>
+        </div>
+
+        <!-- which to leave the tour popUp -->
+        <div id="promt">
+            <h1>KLAAR VOOR DE VERRASSING?</h1>
+            <p>Ontdek iets unieks</p>
+            <button id="Nee" class="Nee2" href="#">NOG NIET</button><button id="Ja" class="Ja2" href="#">YES, I
+                AM</button>
+            <img class="horse" src="beelden/horsema.png" alt="horsema">
+        </div>
+
+        <!-- end popUp -->
+        <div class="stop">
+            <div id="personalvideo"></div>
+            <article>
+
+                <h1>DEEL JE UNIEKE VIDEO!</h1>
+                <p>op verschillende platformen</p>
+                <a class="facebook" href=""><i class="fa fa-facebook"></i></a>
+                <a class="twitter" href=""><i class="fa fa-twitter"></i></a>
+                <a class="message"
+                    href="mailto:https://erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email=test.test%40icloud.com&First%20Name=“ + naam +”&City=“ + stad +”&utm_source=hv-campaigns&hreferer=private&_=1592511058592&;"><span
+                        class="glyphicon glyphicon-envelope"></span></a>
+                <button onclick="copy()" class="kopieer" id="Ja" href="#">KOPIEER LINK</button>
+                <img class="horse" src="beelden/horsema.png" alt="horsema">
+            </article>
+        </div>
+
+
+    </section>
+
+
+</body>
+
+</html>
