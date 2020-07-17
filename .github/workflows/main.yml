@@ -11,6 +11,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ftp://ftp.dedecke.re/
+        ftp-server: ftp://ftp.dedecke.re/EhB/
         ftp-username: dedecke.re
         ftp-password: ${{ secrets.FTP_PASSWORD }}
