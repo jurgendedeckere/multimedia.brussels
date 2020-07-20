@@ -109,7 +109,7 @@ $(function () {
             //already been explained
             index2 = 0;
             $(".overlay").children().eq(index2).fadeIn();
-            $("#fout").text("Gelieve alle velden in te vullen of checken of u een geldige email hebt ingevoerd")
+            $("#fout").text("Gelieve alle velden in te vullen en een geldig e-mailadres in te voeren")
         }
     })
 
@@ -204,22 +204,16 @@ $(function () {
     function slides2() {
         $(".dot1,.dot2,.dot3,.dot4,.dot5").click(function () {
             counter1++;
-            if (counter1 % 3 == 0) {
+            if (counter1 == 3 || counter1 == 7) {
 
                 $("#image").css("background-image", "url('beelden/refter.jpg')");
-                $("#catch").text("Heb je even nood aan een pauze?");
-                $("#plaats").text("Bezoek ons studentenrestaurant.");
+                $("#catch").text("Zin een pauze?");
+                $("#plaats").text("Bezoek dans ons studentenrestaurant.");
 
                 //calls fuction optie
                 optie();
             }
-            if (counter1 % 5 == 0) {
 
-                optie();
-                $("#catch").text("Een kijkje achter de schermen?");
-                $("#plaats").text("Bekijk ons secretariaat in wording.");
-                $("#image").css("background-image", "url('beelden/secret.jpg')");
-            }
         })
     }
 

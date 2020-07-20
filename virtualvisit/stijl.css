@@ -85,7 +85,7 @@ html {
 }
 
 .align {
-	margin: 50px 0 40px 0;
+	margin: 20px 0 20px 0;
 }
 
 
@@ -234,9 +234,16 @@ nav {
 	width: 86%;
 	margin: auto;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: space-evenly;
+	font-family: fontRegular;
+	line-height: 1.5;
 
+
+}
+
+.nav-bar p {
+	padding-left: 20px;
 }
 
 .nav-bar img {
@@ -336,7 +343,7 @@ iframe {
 
 #go {
 	position: absolute;
-	bottom: 7%;
+	bottom: 3%;
 	font-family: fontBold;
 	width: fit-content;
 	padding: 0 20px;
@@ -493,6 +500,8 @@ input:focus {
 	.tut2 {
 		width: 50vw;
 		height: 40vh;
+		min-height: 400px;
+		min-width: 300px;
 	}
 
 	.horseAll {
