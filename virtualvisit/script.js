@@ -208,7 +208,7 @@ $(function () {
 
                 $("#image").css("background-image", "url('beelden/refter.jpg')");
                 $("#catch").text("Zin een pauze?");
-                $("#plaats").text("Bezoek dans ons studentenrestaurant.");
+                $("#plaats").text("Bezoek dan ons studentenrestaurant.");
 
                 //calls fuction optie
                 optie();
