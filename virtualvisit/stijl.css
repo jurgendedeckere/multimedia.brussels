@@ -304,6 +304,7 @@ section {
 	height: 83vh;
 	margin: 0 2%;
 	overflow: hidden;
+	background: #ffffff url("beelden/loader.gif") no-repeat center top;
 }
 
 iframe {
