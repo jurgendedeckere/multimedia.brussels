@@ -69,7 +69,7 @@ $(function () {
         index2++;
 
         //for it has to check if all input field have a value and for the email the @ sysmbol. else it goes back to the form popUp
-        if (a !== "" && b !== "" && c !== "" && b.indexOf("@") >= 0) {
+        if (a !== "" && c !== "") {
 
             //if succeeds.. next tutorial popUp appears
             $(".overlay").children().eq(index2).fadeIn();
@@ -124,7 +124,7 @@ $(function () {
             //already been explained
             index2 = 0;
             $(".overlay").children().eq(index2).fadeIn();
-            $("#fout").text("Gelieve alle velden in te vullen en een geldig e-mailadres in te voeren")
+            $("#fout").text("Gelieve je naam en stad in te voeren.")
         }
     })
 
