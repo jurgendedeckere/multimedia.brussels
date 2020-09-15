@@ -143,6 +143,7 @@ html {
 
 .stop {
 	height: 29%;
+	min-height: 300px;
 }
 
 .hippo-embed-frame {
@@ -547,9 +548,7 @@ input:focus {
 		width: 70vw;
 	}
 
-	#personalvideo {
-		width: 100%;
-	}
+
 
 	.stop {
 		display: block;

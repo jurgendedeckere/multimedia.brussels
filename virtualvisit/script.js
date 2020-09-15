@@ -72,6 +72,8 @@ $(function () {
             //if succeeds.. next tutorial popUp appears
             $(".overlay").children().eq(index2).fadeIn();
 
+            
+
             //at third tutorial popUp trigger the video
             if (index2 == 2) {
                 $("video").trigger('play');
@@ -79,12 +81,19 @@ $(function () {
                 //at second tutorial popUp 
             } else if (index2 == 1) {
                 //remove all spaces whitin the inputs
-                var naam = $("#naam").val().replace(/\s+/g, '');
-                var stad = $("#stad").val().replace(/\s+/g, '');
+                //var naam = $("#naam").val().replace(/\s+/g, '');
+                //var stad = $("#stad").val().replace(/\s+/g, '');
+
+                var naam = encodeURIComponent($("#naam").val());
+                var stad = encodeURIComponent($("#stad").val());
+                var email = encodeURIComponent($("#email").val());
+               
+
+                $.get("save.php?name=" + name + "&email="+email+"&city="+stad);
 
                 //set the link for social media share ready for later on
-                $(".facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=https%3A//erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email=test.test%2540icloud.com%26First%2520Name=" + naam + "%26City=" + stad + "%26utm_source=hv-campaigns%26hreferer=private%26_=1592511058592%26")
-                $(".twitter").attr("href", "https://twitter.com/intent/tweet?text=Net%20een%20unieke%20belevenis%20gehad,%20de%20virtuele%20tour%20van%20Erasmus%20Hogeschool%20Brussel.%20https%3A//erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email=test.test%2540icloud.com%26First%2520Name=" + naam + "%26City=" + stad + "%26utm_source=hv-campaigns%26hreferer=private%26_=1592511058592%26;")
+                $(".facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=https%3A//erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email="+email+"%26First%2520Name=" + naam + "%26City=" + stad + "%26utm_source=hv-campaigns%26hreferer=private%26_=1592511058592%26")
+                $(".twitter").attr("href", "https://twitter.com/intent/tweet?text=Net%20een%20unieke%20belevenis%20gehad,%20de%20virtuele%20tour%20van%20Erasmus%20Hogeschool%20Brussel.%20https%3A//erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email="+email+"%26First%2520Name=" + naam + "%26City=" + stad + "%26utm_source=hv-campaigns%26hreferer=private%26_=1592511058592%26;")
 
                 //set occasional popUps throughout the tour text ready. general stuff could have been written elsewhere
                 $("#catch2").text("Maak gebruik van de bolletjes om je te navigeren doorheen onze school, " + naam);
