@@ -10,7 +10,7 @@ function myFunction() {
 function copy() {
     var eName = encodeURIComponent(document.getElementById("naam").value);
     var eStad = encodeURIComponent(document.getElementById("stad").value);    
-    var copyText = "https://erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email=test.test%40icloud.com&First%20Name=" + eName +"&City=" + eStad +"&utm_source=hv-campaigns&hreferer=private&_=1592511058592&;";
+    var copyText = "https://erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email=outro%40erasmus.com&First%20Name=" + eName +"&City=" + eStad +"&utm_source=hv-campaigns&hreferer=private&_=1592511058592&;";
     var el = document.createElement('textarea');
     el.value = copyText;
     el.setAttribute('readonly', '');
