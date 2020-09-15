@@ -1,7 +1,7 @@
 // function that calls to your personal video made by website "Lapentor" and place your name and city in it
 function myFunction() {
-    var naam = document.getElementById("naam").value;
-    var stad = document.getElementById("stad").value;
+    var naam = encodeURIComponent(document.getElementById("naam").value);
+    var stad = encodeURIComponent(document.getElementById("stad").value);
     document.getElementById(
         "personalvideo").innerHTML = "<iframe class='hippo-embed-frame ' width='100%'  scrolling='no' frameborder=0 marginwidth=0 marginheight=0 src='https://erasmushogeschoolkyopo4.hippovideo.io/video/embed/j8_y_5RoWAdYTuW0hS_879oYHiio0WfYMbSSHMrE1bg?Email=outro%40erasmus.com&City=" + eStad + "&First%20Name=" + eName + "&utm_source=hv-campaigns&hreferer=private&_=1593122661057&%20Watch%20Video' allowfullscreen ></iframe>";
 }
