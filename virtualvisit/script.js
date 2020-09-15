@@ -89,7 +89,7 @@ $(function () {
                 var email = encodeURIComponent($("#email").val());
                
 
-                $.get("save.php?name=" + name + "&email="+email+"&city="+stad);
+                $.get("save.php?name=" + naam + "&email="+email+"&city="+stad);
 
                 //set the link for social media share ready for later on
                 $(".facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=https%3A//erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email="+email+"%26First%2520Name=" + naam + "%26City=" + stad + "%26utm_source=hv-campaigns%26hreferer=private%26_=1592511058592%26")
