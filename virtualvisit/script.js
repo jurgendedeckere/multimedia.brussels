@@ -3,12 +3,12 @@ function myFunction() {
     var naam = document.getElementById("naam").value;
     var stad = document.getElementById("stad").value;
     document.getElementById(
-        "personalvideo").innerHTML = "<iframe class='hippo-embed-frame ' width='100%'  scrolling='no' frameborder=0 marginwidth=0 marginheight=0 src='https://erasmushogeschoolkyopo4.hippovideo.io/video/embed/j8_y_5RoWAdYTuW0hS_879oYHiio0WfYMbSSHMrE1bg?Email=outro%40erasmus.com&City=" + stad + "&First%20Name=" + naam + "&utm_source=hv-campaigns&hreferer=private&_=1593122661057&%20Watch%20Video' allowfullscreen ></iframe>";
+        "personalvideo").innerHTML = "<iframe class='hippo-embed-frame ' width='100%'  scrolling='no' frameborder=0 marginwidth=0 marginheight=0 src='https://erasmushogeschoolkyopo4.hippovideo.io/video/embed/j8_y_5RoWAdYTuW0hS_879oYHiio0WfYMbSSHMrE1bg?Email=outro%40erasmus.com&City=" + eStad + "&First%20Name=" + eName + "&utm_source=hv-campaigns&hreferer=private&_=1593122661057&%20Watch%20Video' allowfullscreen ></iframe>";
 }
 
 // this function copied the following link to your clipboard. credits goes to wienert gillijns
 function copy() {
-    var copyText = "https://erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email=test.test%40icloud.com&First%20Name=“ + naam +”&City=“ + stad +”&utm_source=hv-campaigns&hreferer=private&_=1592511058592&;";
+    var copyText = "https://erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email=test.test%40icloud.com&First%20Name=" + eName +"&City=" + eStad +"&utm_source=hv-campaigns&hreferer=private&_=1592511058592&;";
     var el = document.createElement('textarea');
     el.value = copyText;
     el.setAttribute('readonly', '');
@@ -84,16 +84,20 @@ $(function () {
                 //var naam = $("#naam").val().replace(/\s+/g, '');
                 //var stad = $("#stad").val().replace(/\s+/g, '');
 
-                var naam = encodeURIComponent($("#naam").val());
-                var stad = encodeURIComponent($("#stad").val());
-                var email = encodeURIComponent($("#email").val());
+                var naam = $("#naam").val();
+                var stad = $("#stad").val();
+                var email = $("#email").val();
+
+                var eName = encodeURIComponent($("#naam").val());
+                var eStad = encodeURIComponent($("#stad").val());
+                var eEmail = encodeURIComponent($("#email").val());
                
 
-                $.get("save.php?name=" + naam + "&email="+email+"&city="+stad);
+                $.get("save.php?name=" + eName + "&email="+eEmail+"&city="+eStad);
 
                 //set the link for social media share ready for later on
-                $(".facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=https%3A//erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email="+email+"%26First%2520Name=" + naam + "%26City=" + stad + "%26utm_source=hv-campaigns%26hreferer=private%26_=1592511058592%26")
-                $(".twitter").attr("href", "https://twitter.com/intent/tweet?text=Net%20een%20unieke%20belevenis%20gehad,%20de%20virtuele%20tour%20van%20Erasmus%20Hogeschool%20Brussel.%20https%3A//erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email="+email+"%26First%2520Name=" + naam + "%26City=" + stad + "%26utm_source=hv-campaigns%26hreferer=private%26_=1592511058592%26;")
+                $(".facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=https%3A//erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email="+eEmail+"%26First%2520Name=" + eName + "%26City=" + eStad + "%26utm_source=hv-campaigns%26hreferer=private%26_=1592511058592%26")
+                $(".twitter").attr("href", "https://twitter.com/intent/tweet?text=Net%20een%20unieke%20belevenis%20gehad,%20de%20virtuele%20tour%20van%20Erasmus%20Hogeschool%20Brussel.%20https%3A//erasmushogeschoolb0zz0v.hippovideo.io/video/embed/x9uNnABZNWoMho7_aGO-c1wn8jZJY7-zfRzKW55xzUQ?Email="+eEmail+"%26First%2520Name=" + eName + "%26City=" + eStad + "%26utm_source=hv-campaigns%26hreferer=private%26_=1592511058592%26;")
 
                 //set occasional popUps throughout the tour text ready. general stuff could have been written elsewhere
                 $("#catch2").text("Maak gebruik van de bolletjes om je te navigeren doorheen onze school, " + naam);
